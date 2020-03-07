@@ -106,7 +106,7 @@ body {
 .intro-section {
   margin: 0px; 
   padding: 0px; 
-  height: 896px; 
+  height: 836px; 
 }
 
 .intro-section .intro-text-block {
@@ -117,7 +117,7 @@ body {
 .intro-section .intro-text-block h2 {
     font-family: reklame-script, sans-serif;
     font-style: normal;
-    font-size: 25pt;
+    font-size: 28pt;
     font-weight: 300;
     margin: 0px; 
 }
