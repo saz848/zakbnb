@@ -1,15 +1,8 @@
 
-#sections {
-  overflow-y: auto;
-}
 
-#sections.snap {
+html {
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
-}
-
-#sections.snap .scroll {
-  scroll-snap-align: start;
 }
 
 body {
@@ -82,6 +75,7 @@ body {
     height: 90vh;
     width: 100v;
     position: relative; 
+    scroll-snap-align: start;
 }
 
 #welcome-section img{
@@ -124,6 +118,7 @@ body {
   padding: 0px; 
   height: 100vh;
   width: 100vw;
+  scroll-snap-align: start;
 }
 
 #intro-section .intro-text-block {
@@ -155,6 +150,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0px; 
+  scroll-snap-align: start;
 }
 
 #listing-section .listing-title-block {
@@ -193,6 +189,7 @@ body {
   padding: 0px; 
   height: 100vh;
   width: 100vw;
+  scroll-snap-align: start;
 }
 
 #about-section .about-text-block {
