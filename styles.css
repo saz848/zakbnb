@@ -1,3 +1,7 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
     font-family: mr-eaves-xl-modern, sans-serif;
     font-weight: 300;
@@ -65,6 +69,9 @@ body {
 }
 
 .welcome-section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
     position: relative; 
 }
 
@@ -106,7 +113,9 @@ body {
 .intro-section {
   margin: 0px; 
   padding: 0px; 
-  height: 836px; 
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
 }
 
 .intro-section .intro-text-block {
@@ -135,6 +144,9 @@ body {
 
 .listing-section {
   background-color: #d1e4f6;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
   margin: 0px; 
 }
 
@@ -167,6 +179,38 @@ body {
 
 .listing p {
   font-size: 12px; 
+}
+
+.about-section {
+  margin: 0px; 
+  padding: 0px; 
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.about-section .about-text-block {
+  padding: 100px 40px 50px 40px; 
+  text-align: center; 
+}
+
+.about-section .about-text-block h2 {
+  font-family: reklame-script, sans-serif;
+  font-style: normal;
+  font-size: 28pt;
+  font-weight: 300;
+  margin: 0px; 
+}
+
+.about-section .about-text-block .about-text-content {
+padding-top: 50px; 
+}
+
+.about-section .about-text-block p {
+padding-top: 10px; 
+font-weight: 300;
+font-size: 18pt; 
+line-height: 1.2;
 }
 
 .footer {
