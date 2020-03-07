@@ -1,10 +1,15 @@
-html {
-  overflow-y: scroll;
+
+#sections {
+  overflow-y: auto;
+}
+
+#sections.snap {
   scroll-snap-type: y mandatory;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100%);
-  scroll-snap-destination: 0 0;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
+}
+
+#sections.snap .scroll {
+  scroll-snap-align: start;
 }
 
 body {
@@ -73,22 +78,20 @@ body {
     height: 40px; 
 }
 
-.welcome-section {
+#welcome-section {
     height: 90vh;
     width: 100v;
-    scroll-snap-align: start;
-    overflow: visible; 
     position: relative; 
 }
 
-.welcome-section img{
+#welcome-section img{
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
     margin: 0px; 
 }
 
-.welcome-section .welcome-text-block {
+#welcome-section .welcome-text-block {
     position: absolute;
     bottom: 100px;
     left: 0px; 
@@ -100,7 +103,7 @@ body {
     padding-bottom: 5px; 
 }
 
-.welcome-section .welcome-text-block h2 {
+#welcome-section .welcome-text-block h2 {
     font-family: reklame-script, sans-serif;
     font-style: normal;
     font-size: 32pt;
@@ -108,7 +111,7 @@ body {
     margin: 0px; 
 }
 
-.welcome-section .welcome-text-block p {
+#welcome-section .welcome-text-block p {
     font-size: 18pt;
     margin-top: -10px; 
     margin-left: 80px; 
@@ -116,21 +119,19 @@ body {
     font-weight: lighter; 
 }
 
-.intro-section {
+#intro-section {
   margin: 0px; 
   padding: 0px; 
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: start;
-  overflow: visible; 
 }
 
-.intro-section .intro-text-block {
+#intro-section .intro-text-block {
     padding: 100px 40px 50px 40px; 
     text-align: center; 
 }
 
-.intro-section .intro-text-block h2 {
+#intro-section .intro-text-block h2 {
     font-family: reklame-script, sans-serif;
     font-style: normal;
     font-size: 28pt;
@@ -138,27 +139,25 @@ body {
     margin: 0px; 
 }
 
-.intro-section .intro-text-block .intro-text-content {
+#intro-section .intro-text-block .intro-text-content {
   padding-top: 50px; 
 }
 
-.intro-section .intro-text-block p {
+#intro-section .intro-text-block p {
   padding-top: 10px; 
   font-weight: 300;
   font-size: 18pt; 
   line-height: 1.2;
 }
 
-.listing-section {
+#listing-section {
   background-color: #d1e4f6;
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: start;
-  overflow: visible; 
   margin: 0px; 
 }
 
-.listing-section .listing-title-block {
+#listing-section .listing-title-block {
   padding: 40px 20px 40px 20px; 
   text-align: center; 
 }
@@ -189,21 +188,19 @@ body {
   font-size: 12px; 
 }
 
-.about-section {
+#about-section {
   margin: 0px; 
   padding: 0px; 
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: start;
-  overflow: visible; 
 }
 
-.about-section .about-text-block {
+#about-section .about-text-block {
   padding: 100px 40px 50px 40px; 
   text-align: center; 
 }
 
-.about-section .about-text-block h2 {
+#about-section .about-text-block h2 {
   font-family: reklame-script, sans-serif;
   font-style: normal;
   font-size: 28pt;
@@ -211,14 +208,14 @@ body {
   margin: 0px; 
 }
 
-.about-section .about-text-block .about-text-content {
+#about-section .about-text-block .about-text-content {
 padding-top: 50px; 
 }
 
-.about-section .about-text-block p {
+#about-section .about-text-block p {
 padding-top: 10px; 
 font-weight: 300;
-font-size: 18pt; 
+font-size: 12pt; 
 line-height: 1.2;
 }
 
