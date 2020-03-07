@@ -1,5 +1,8 @@
 html {
   scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: mandatory;
+  -webkit-overflow-scrolling:touch;
+  -ms-scroll-snap-type: mandatory;
 }
 
 body {
