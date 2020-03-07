@@ -77,26 +77,26 @@ body {
 
 .welcome-section .welcome-text-block {
     position: absolute;
-    bottom: 75px;
+    bottom: 100px;
     left: 0px; 
     background-color: white;
     color: black;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 0px; 
-    padding-bottom: 0px; 
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px; 
+    padding-bottom: 5px; 
 }
 
 .welcome-section .welcome-text-block h2 {
     font-family: reklame-script, sans-serif;
     font-style: normal;
-    font-size: 28pt;
+    font-size: 32pt;
     font-weight: 300;
     margin: 0px; 
 }
 
 .welcome-section .welcome-text-block p {
-    font-size: 14pt;
+    font-size: 18pt;
     margin-top: -10px; 
     margin-left: 80px; 
     margin-bottom: 10px; 
@@ -106,29 +106,30 @@ body {
 .intro-section {
   margin: 0px; 
   padding: 0px; 
+  height: 896px; 
 }
 
 .intro-section .intro-text-block {
-    padding: 60px 30px 50px 30px; 
+    padding: 100px 40px 50px 40px; 
     text-align: center; 
 }
 
 .intro-section .intro-text-block h2 {
     font-family: reklame-script, sans-serif;
     font-style: normal;
-    font-size: 20pt;
+    font-size: 25pt;
     font-weight: 300;
     margin: 0px; 
 }
 
 .intro-section .intro-text-block .intro-text-content {
-  padding-top: 25px; 
+  padding-top: 50px; 
 }
 
 .intro-section .intro-text-block p {
   padding-top: 10px; 
   font-weight: 300;
-  font-size: 12pt; 
+  font-size: 18pt; 
   line-height: 1.2;
 }
 
